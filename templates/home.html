@@ -54,26 +54,37 @@
                 width: 100%;
                 height: 360px;
                 object-fit: cover;
+                margin-bottom: 16px;
             }
         </style>
     
     </head>
     
     <body>
-        <div class="container">
-
-        <h1 class="text-center">{{company_name}} Careers</h1>
+        {% include 'nav.html' %}
 
         <img class="img-fluid" id="banner" src="static/banner.jpg">
+        
+        <div class="container">
+        <h1 class="text-center">{{company_name}} Careers</h1>
 
         <h2 class="text-center" mt-2 mb-3> About Ahmad Careers </h2>
 
-        <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+            <div class="d-none d-md-block col-md-6">
+                <img src="/static/working.jpg" style="height:320px; border-radius: 16px;">
+            </div>
+
+        </div>
 
         <h2 class="text-center" mt-2 mb-3> Open Positions </h2>
 
@@ -86,6 +97,8 @@
         <div class="text-center">
         <button class="btn btn-primary btn-lg" > Contact Us </button>
         </div>
+
+        {% include 'footer.html' %}
 
     </div>
     </body>
