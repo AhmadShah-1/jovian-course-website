@@ -1,2 +1,3 @@
+This project is hosted using "Render"
 
-This project is hosted on "Render"
+The online cloud database for storing jobs and applications uses "panel.filess.io" and using MySQL Workbench to connect with it
